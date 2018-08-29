@@ -13,9 +13,7 @@ fn main() {
     println!("speed {}", speed);
 }
 
-// They are initialized with an integer value, and can be converted into that integer with a type cast.
-
-// You only need to give the first name a value, after that the value increments by one
+/*They are initialized with an integer value, and can be converted into that integer with a type cast. You only need to give the first name a value, after that the value increments by one */
 enum Difficulty {
     Easy = 1,
     Medium,  // is 2

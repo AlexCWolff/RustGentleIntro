@@ -1,0 +1,8 @@
+[package]
+name = "test-json"
+version = "0.1.0"
+authors = ["Alex C. Wolff <alexcwolff@protonmail.ch>"]
+
+[dependencies]
+# Make the project depend on the JSON crate
+json="0.11.4"
