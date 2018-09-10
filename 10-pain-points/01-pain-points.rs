@@ -1,0 +1,15 @@
+/* It is true to say that Rust is a harder language to learn than most 'mainstream' languages. There are exceptional people who don't find it so difficult, but note the strict meaning of 'exceptional' - they are exceptions. Many struggle at first, and then succeed. Initial difficulties aren't predictive of later competency.
+
+We all come from somewhere, and in the case of programming languages this means previous exposure to mainstream languages like one of the 'dynamic' languages like Python or one of the 'static' languages like C++. Either way, Rust is sufficiently different to require mental retooling. Clever people with experience jump in and are disappointed that their cleverness is not immediately rewarded; people with less self-worth think they aren't 'clever' enough.
+
+For those with dynamic language experience (in which I would include Java) everything is a reference, and all references are mutable by default. Garbage collection does make it easier to write memory-safe programs. A lot has gone into making the JVM pretty fast, at the cost of memory use and predicability. Often that cost is considered worth it; the old new idea that programmer productivity is more important than computer performance.
+
+But most computers in the world, the ones that handle really important things like throttle control on cars, don't have the massive resources that even a cheap laptop has, and they need to respond to events in real time. Likewise, basic software infrastructure needs to be correct, robust, and fast (the old engineering trinity). Much of this is done in C and C++ which are inherently unsafe; the total cost of this unsafety is the thing to look at here. Maybe you knock the program together quicker, but then the real development starts.
+
+System languages can't afford garbage collection, because they are the bedrock on which everything rests. They allow you to be free to waste resources as you see fit.
+
+If there is no garbage collection, then memory must be managed in other ways. Manual memory management, I grab memory, use it, and explicitly give it back, is hard to get right. You can learn enough C to be productive and dangerous in a few weeks, but it takes years to become a good safe C programmer, checking every possible error condition.
+
+Rust manages memory like modern C++; as objects are destroyed, their memory is reclaimed. You can allocate memory on the heap with 'Box', but as soon as that box goes out of scope at the end of the function, the memory is reclaimed, so there is something like 'new' but nothing like 'delete'. You create a 'File' and at the end, the file handle (a precious resource) is closed. In Rust this is called dropping.
+
+You need to share resources, it's very inefficient to make copies of everything, and that's where things get interesting. C++ also has references, although Rust references are more like C pointers; you need to say '*r' to refer to the value, you need to say '&' to pass a value as a reference. Rust's borrow checker makes sure that is impossible for a reference to exist after the original value is destroyed. */

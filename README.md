@@ -1,47 +1,5 @@
 # Rust Gentle Intro
 
-This is my code along to [Rust Gentle Intro](https://stevedonovan.github.io/rust-gentle-intro/readme.html). While the code is preserved I added comments to the code and rewrote some sections as comments to improve the explanations and make the text flow more naturally (at least for me).
+This started as my code along to [Rust Gentle Intro](https://stevedonovan.github.io/rust-gentle-intro/readme.html) but ended up being a minor rewrite to improve the explanations and make the text flow more naturally (at least for me). A lot of this code will not compile since it's formatted for reading, not executing.
 
-## Compilation Errors
-
-The following files will not compile because they intentionally include errors. All other files should compile fine, if not submit an issue or pull request. 
-
-### Lesson 1
-* 
-* 
-
-### Lesson 2
-* 
-*
-
-### Lesson 3
-* 
-* 
-
-### Lesson 4
-* 
-* 
-
-### Lesson 5
-* 
-* 
-
-### Lesson 6
-* 
-* 
-
-### Lesson 7
-* 
-* 
-
-### Lesson 8
-* 
-* 
-
-### Lesson 9
-* 
-* 
-
-### Lesson 10
-* 
-* 
+To install Rust: curl https://sh.rustup.rs -sSf | sh
